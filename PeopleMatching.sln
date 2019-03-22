@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleMatching.Api", "PeopleMatching.Api\PeopleMatching.Api.csproj", "{9EB3F612-EAD6-4A6B-9D55-FF7A8E828A38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleMatching.Api", "PeopleMatching.Api\PeopleMatching.Api.csproj", "{9EB3F612-EAD6-4A6B-9D55-FF7A8E828A38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleMatching.Core", "PeopleMatching.Core\PeopleMatching.Core.csproj", "{75EE8997-190B-4F93-AD88-0E62F45F9661}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleMatching.Infrastructure", "PeopleMatching.Infrastructure\PeopleMatching.Infrastructure.csproj", "{76515517-289D-427D-937F-07DE2CA4FE11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleIdp", "PeopleIdp\PeopleIdp.csproj", "{FBCFC3BC-1F28-4C93-A432-193CED95593A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcClient", "MvcClient\MvcClient.csproj", "{0BEF2A2F-03E9-45C9-86E5-B29B8D5F7ED7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{9EB3F612-EAD6-4A6B-9D55-FF7A8E828A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EB3F612-EAD6-4A6B-9D55-FF7A8E828A38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EB3F612-EAD6-4A6B-9D55-FF7A8E828A38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75EE8997-190B-4F93-AD88-0E62F45F9661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75EE8997-190B-4F93-AD88-0E62F45F9661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75EE8997-190B-4F93-AD88-0E62F45F9661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75EE8997-190B-4F93-AD88-0E62F45F9661}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76515517-289D-427D-937F-07DE2CA4FE11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76515517-289D-427D-937F-07DE2CA4FE11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76515517-289D-427D-937F-07DE2CA4FE11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76515517-289D-427D-937F-07DE2CA4FE11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBCFC3BC-1F28-4C93-A432-193CED95593A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBCFC3BC-1F28-4C93-A432-193CED95593A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBCFC3BC-1F28-4C93-A432-193CED95593A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBCFC3BC-1F28-4C93-A432-193CED95593A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BEF2A2F-03E9-45C9-86E5-B29B8D5F7ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BEF2A2F-03E9-45C9-86E5-B29B8D5F7ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BEF2A2F-03E9-45C9-86E5-B29B8D5F7ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BEF2A2F-03E9-45C9-86E5-B29B8D5F7ED7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

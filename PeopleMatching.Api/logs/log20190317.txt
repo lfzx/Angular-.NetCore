@@ -1,0 +1,410 @@
+2019-03-17 15:23:35.121 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 15:23:35.845 +08:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 15:23:35.902 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Posts" AS "p")
+    THEN 1 ELSE 0
+END
+2019-03-17 15:23:36.085 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-17 15:23:38.083 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts  
+2019-03-17 15:23:38.379 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 15:23:38.398 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) - Validation state: "Valid"
+2019-03-17 15:23:38.409 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 15:23:38.521 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 15:23:38.544 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastField", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+2019-03-17 15:23:38.670 +08:00 [ERR] Get all posts........
+2019-03-17 15:23:38.677 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 270.8001ms.
+2019-03-17 15:23:38.698 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PeopleMatching.Core.Entities.Post, PeopleMatching.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-03-17 15:23:38.826 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 438.69890000000004ms
+2019-03-17 15:23:38.851 +08:00 [INF] Request finished in 769.286ms 200 application/json; charset=utf-8
+2019-03-17 16:17:11.063 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 16:17:11.658 +08:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 16:17:11.731 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Posts" AS "p")
+    THEN 1 ELSE 0
+END
+2019-03-17 16:17:11.838 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-17 16:17:14.021 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts  
+2019-03-17 16:17:14.217 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 16:17:14.766 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) - Validation state: "Valid"
+2019-03-17 16:17:14.887 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 16:17:15.006 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 16:17:15.033 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastField", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+2019-03-17 16:17:15.245 +08:00 [ERR] Get all posts........
+2019-03-17 16:17:15.257 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 369.97450000000003ms.
+2019-03-17 16:17:15.285 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PeopleMatching.Infrastructure.Resources.PostResource, PeopleMatching.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-03-17 16:17:15.408 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 1176.5867ms
+2019-03-17 16:17:15.431 +08:00 [INF] Request finished in 1412.5539ms 200 application/json; charset=utf-8
+2019-03-17 16:47:58.842 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 16:47:59.530 +08:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 16:47:59.622 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Posts" AS "p")
+    THEN 1 ELSE 0
+END
+2019-03-17 16:47:59.744 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-17 16:48:02.005 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts  
+2019-03-17 16:48:02.139 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 16:48:02.990 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) - Validation state: "Valid"
+2019-03-17 16:48:03.011 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 16:48:03.117 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 16:48:03.137 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastField", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+2019-03-17 16:48:03.272 +08:00 [ERR] Get all posts........
+2019-03-17 16:48:03.280 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 275.0197ms.
+2019-03-17 16:48:03.297 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PeopleMatching.Infrastructure.Resources.PostResource, PeopleMatching.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-03-17 16:48:03.384 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 1230.9315000000001ms
+2019-03-17 16:48:03.407 +08:00 [INF] Request finished in 1402.783ms 200 application/json; charset=utf-8
+2019-03-17 16:48:11.392 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts/1  0
+2019-03-17 16:48:11.398 +08:00 [INF] Request finished in 6.3313ms 404 
+2019-03-17 16:49:03.752 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/1  
+2019-03-17 16:49:03.949 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 16:49:04.074 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) with arguments (["1"]) - Validation state: "Valid"
+2019-03-17 16:49:04.090 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 16:49:04.232 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 16:49:04.262 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Author", "e"."Body", "e"."LastField", "e"."Remark", "e"."Title"
+FROM "Posts" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1
+2019-03-17 16:49:04.291 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 204.00320000000002ms.
+2019-03-17 16:49:04.297 +08:00 [INF] Executing ObjectResult, writing value of type 'PeopleMatching.Infrastructure.Resources.PostResource'.
+2019-03-17 16:49:04.301 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 346.33750000000003ms
+2019-03-17 16:49:04.313 +08:00 [INF] Request finished in 560.9848ms 200 application/json; charset=utf-8
+2019-03-17 16:49:19.840 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/2  
+2019-03-17 16:49:19.848 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 16:49:19.853 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) with arguments (["2"]) - Validation state: "Valid"
+2019-03-17 16:49:19.859 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 16:49:19.877 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 16:49:19.888 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Author", "e"."Body", "e"."LastField", "e"."Remark", "e"."Title"
+FROM "Posts" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1
+2019-03-17 16:49:19.896 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 37.423ms.
+2019-03-17 16:49:19.901 +08:00 [INF] Executing ObjectResult, writing value of type 'PeopleMatching.Infrastructure.Resources.PostResource'.
+2019-03-17 16:49:19.905 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 52.2111ms
+2019-03-17 16:49:19.910 +08:00 [INF] Request finished in 70.4306ms 200 application/json; charset=utf-8
+2019-03-17 16:49:30.206 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts/1  0
+2019-03-17 16:49:30.210 +08:00 [INF] Request finished in 3.5195ms 404 
+2019-03-17 16:49:42.095 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/2  
+2019-03-17 16:49:42.100 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 16:49:42.108 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) with arguments (["2"]) - Validation state: "Valid"
+2019-03-17 16:49:42.114 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 16:49:42.123 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 16:49:42.132 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Author", "e"."Body", "e"."LastField", "e"."Remark", "e"."Title"
+FROM "Posts" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1
+2019-03-17 16:49:42.146 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 32.728ms.
+2019-03-17 16:49:42.162 +08:00 [INF] Executing ObjectResult, writing value of type 'PeopleMatching.Infrastructure.Resources.PostResource'.
+2019-03-17 16:49:42.166 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 57.8372ms
+2019-03-17 16:49:42.177 +08:00 [INF] Request finished in 81.232ms 200 application/json; charset=utf-8
+2019-03-17 16:53:43.574 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 16:53:44.309 +08:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 16:53:44.400 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Posts" AS "p")
+    THEN 1 ELSE 0
+END
+2019-03-17 16:53:44.555 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-17 16:53:47.602 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts  
+2019-03-17 16:53:47.816 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 16:53:48.246 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) - Validation state: "Valid"
+2019-03-17 16:53:48.260 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 16:53:48.383 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 16:53:48.405 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastField", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+2019-03-17 16:53:48.548 +08:00 [ERR] Get all posts........
+2019-03-17 16:53:48.555 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 300.7081ms.
+2019-03-17 16:53:48.575 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PeopleMatching.Infrastructure.Resources.PostResource, PeopleMatching.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-03-17 16:53:48.659 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 833.8451ms
+2019-03-17 16:53:48.682 +08:00 [INF] Request finished in 1080.5057ms 200 application/json; charset=utf-8
+2019-03-17 16:54:05.257 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/2  
+2019-03-17 16:54:05.285 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 16:54:05.339 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) with arguments (["2"]) - Validation state: "Valid"
+2019-03-17 16:54:05.359 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 16:54:05.532 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 16:54:05.584 +08:00 [INF] Executed DbCommand (14ms) [Parameters=[@__get_Item_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Author", "e"."Body", "e"."LastField", "e"."Remark", "e"."Title"
+FROM "Posts" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1
+2019-03-17 16:54:05.630 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 275.0287ms.
+2019-03-17 16:54:06.000 +08:00 [WRN] No output formatter was found for content type 'application/atom+xml' to write the response.
+2019-03-17 16:54:06.005 +08:00 [WRN] No output formatter was found for content type 'application/atom+xml' to write the response.
+2019-03-17 16:54:06.009 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 711.8211ms
+2019-03-17 16:54:06.019 +08:00 [INF] Request finished in 762.7994ms 406 
+2019-03-17 16:56:24.278 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 16:56:25.046 +08:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 16:56:25.176 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Posts" AS "p")
+    THEN 1 ELSE 0
+END
+2019-03-17 16:56:25.334 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-17 16:56:27.835 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts  
+2019-03-17 16:56:28.105 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 16:56:28.779 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) - Validation state: "Valid"
+2019-03-17 16:56:28.794 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 16:56:28.968 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 16:56:29.009 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastField", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+2019-03-17 16:56:29.285 +08:00 [ERR] Get all posts........
+2019-03-17 16:56:29.298 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 506.6585ms.
+2019-03-17 16:56:29.343 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PeopleMatching.Infrastructure.Resources.PostResource, PeopleMatching.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-03-17 16:56:29.551 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 1425.3021ms
+2019-03-17 16:56:29.641 +08:00 [INF] Request finished in 1811.0312ms 200 application/json; charset=utf-8
+2019-03-17 16:56:51.581 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/2  
+2019-03-17 16:56:51.611 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 16:56:51.667 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) with arguments (["2"]) - Validation state: "Valid"
+2019-03-17 16:56:51.694 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 16:56:51.879 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 16:56:51.933 +08:00 [INF] Executed DbCommand (16ms) [Parameters=[@__get_Item_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Author", "e"."Body", "e"."LastField", "e"."Remark", "e"."Title"
+FROM "Posts" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1
+2019-03-17 16:56:52.024 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 336.9554ms.
+2019-03-17 16:56:52.061 +08:00 [INF] Executing ObjectResult, writing value of type 'PeopleMatching.Infrastructure.Resources.PostResource'.
+2019-03-17 16:56:52.068 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 441.35150000000004ms
+2019-03-17 16:56:52.084 +08:00 [INF] Request finished in 502.9969ms 200 application/json; charset=utf-8
+2019-03-17 16:57:34.554 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 16:57:35.077 +08:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 16:57:35.136 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Posts" AS "p")
+    THEN 1 ELSE 0
+END
+2019-03-17 16:57:35.213 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-17 16:57:37.544 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts  
+2019-03-17 16:57:37.694 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 16:57:38.176 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) - Validation state: "Valid"
+2019-03-17 16:57:38.185 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 16:57:38.306 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 16:57:38.325 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastField", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+2019-03-17 16:57:38.461 +08:00 [ERR] Get all posts........
+2019-03-17 16:57:38.469 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 284.284ms.
+2019-03-17 16:57:38.481 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PeopleMatching.Infrastructure.Resources.PostResource, PeopleMatching.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-03-17 16:57:38.572 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 866.1856ms
+2019-03-17 16:57:38.603 +08:00 [INF] Request finished in 1060.3588ms 200 application/json; charset=utf-8
+2019-03-17 16:57:48.586 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/2  
+2019-03-17 16:57:48.607 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 16:57:48.657 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) with arguments (["2"]) - Validation state: "Valid"
+2019-03-17 16:57:48.743 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 16:57:48.877 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 16:57:48.913 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Author", "e"."Body", "e"."LastField", "e"."Remark", "e"."Title"
+FROM "Posts" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1
+2019-03-17 16:57:48.946 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 206.25910000000002ms.
+2019-03-17 16:57:48.961 +08:00 [INF] Executing ObjectResult, writing value of type 'PeopleMatching.Infrastructure.Resources.PostResource'.
+2019-03-17 16:57:49.037 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 422.1471ms
+2019-03-17 16:57:49.057 +08:00 [INF] Request finished in 470.3772ms 200 application/xml; charset=utf-8
+2019-03-17 17:11:57.093 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 17:11:57.713 +08:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 17:11:57.765 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Posts" AS "p")
+    THEN 1 ELSE 0
+END
+2019-03-17 17:11:57.861 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-17 17:12:00.056 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts  
+2019-03-17 17:12:00.258 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 17:12:00.727 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) with arguments (["PeopleMatching.Core.Entities.PostParameters"]) - Validation state: "Valid"
+2019-03-17 17:12:00.747 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 17:12:00.965 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 17:12:01.017 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "x"."Id", "x"."Author", "x"."Body", "x"."LastField", "x"."Remark", "x"."Title"
+FROM "Posts" AS "x"
+ORDER BY "x"."Id"
+LIMIT @__p_1 OFFSET @__p_0
+2019-03-17 17:12:01.175 +08:00 [ERR] Get all posts........
+2019-03-17 17:12:01.186 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 439.40340000000003ms.
+2019-03-17 17:12:01.216 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PeopleMatching.Infrastructure.Resources.PostResource, PeopleMatching.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-03-17 17:12:01.360 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 1091.5436ms
+2019-03-17 17:12:01.382 +08:00 [INF] Request finished in 1326.9287ms 200 application/json; charset=utf-8
+2019-03-17 17:12:13.150 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=0&pageSize=3,  
+2019-03-17 17:12:13.154 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 17:12:13.312 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) with arguments (["PeopleMatching.Core.Entities.PostParameters"]) - Validation state: "Invalid"
+2019-03-17 17:12:13.324 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 17:12:13.338 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 17:12:13.352 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "x"."Id", "x"."Author", "x"."Body", "x"."LastField", "x"."Remark", "x"."Title"
+FROM "Posts" AS "x"
+ORDER BY "x"."Id"
+LIMIT @__p_1 OFFSET @__p_0
+2019-03-17 17:12:13.365 +08:00 [ERR] Get all posts........
+2019-03-17 17:12:13.370 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 47.6315ms.
+2019-03-17 17:12:13.376 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PeopleMatching.Infrastructure.Resources.PostResource, PeopleMatching.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-03-17 17:12:13.380 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 220.78410000000002ms
+2019-03-17 17:12:13.388 +08:00 [INF] Request finished in 238.2946ms 200 application/json; charset=utf-8
+2019-03-17 17:12:22.187 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=0&pageSize=3  
+2019-03-17 17:12:22.191 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 17:12:22.200 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) with arguments (["PeopleMatching.Core.Entities.PostParameters"]) - Validation state: "Valid"
+2019-03-17 17:12:22.209 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 17:12:22.217 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 17:12:22.229 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "x"."Id", "x"."Author", "x"."Body", "x"."LastField", "x"."Remark", "x"."Title"
+FROM "Posts" AS "x"
+ORDER BY "x"."Id"
+LIMIT @__p_1 OFFSET @__p_0
+2019-03-17 17:12:22.243 +08:00 [ERR] Get all posts........
+2019-03-17 17:12:22.248 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 39.174800000000005ms.
+2019-03-17 17:12:22.257 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PeopleMatching.Infrastructure.Resources.PostResource, PeopleMatching.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-03-17 17:12:22.263 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 65.1477ms
+2019-03-17 17:12:22.273 +08:00 [INF] Request finished in 85.6515ms 200 application/json; charset=utf-8
+2019-03-17 17:36:13.612 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 17:36:14.271 +08:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 17:36:14.350 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Posts" AS "p")
+    THEN 1 ELSE 0
+END
+2019-03-17 17:36:14.462 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-17 17:36:16.876 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts  
+2019-03-17 17:36:17.069 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 17:36:17.671 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) with arguments (["PeopleMatching.Core.Entities.PostParameters"]) - Validation state: "Valid"
+2019-03-17 17:36:17.729 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 17:36:17.898 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 17:36:17.927 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "x"
+2019-03-17 17:36:18.115 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 17:36:18.154 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "x"."Id", "x"."Author", "x"."Body", "x"."LastField", "x"."Remark", "x"."Title"
+FROM "Posts" AS "x"
+ORDER BY "x"."Id"
+LIMIT @__p_1 OFFSET @__p_0
+2019-03-17 17:36:18.506 +08:00 [ERR] Get all posts........
+2019-03-17 17:36:18.513 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 792.98250000000007ms.
+2019-03-17 17:36:18.532 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PeopleMatching.Infrastructure.Resources.PostResource, PeopleMatching.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-03-17 17:36:18.569 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 1483.1624000000002ms
+2019-03-17 17:36:18.597 +08:00 [INF] Request finished in 1721.6191ms 200 application/json; charset=utf-8
+2019-03-17 17:36:24.287 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=0&pageSize=3  
+2019-03-17 17:36:24.294 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 17:36:24.308 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) with arguments (["PeopleMatching.Core.Entities.PostParameters"]) - Validation state: "Valid"
+2019-03-17 17:36:24.319 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 17:36:24.336 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 17:36:24.351 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "x"
+2019-03-17 17:36:24.371 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 17:36:24.388 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "x"."Id", "x"."Author", "x"."Body", "x"."LastField", "x"."Remark", "x"."Title"
+FROM "Posts" AS "x"
+ORDER BY "x"."Id"
+LIMIT @__p_1 OFFSET @__p_0
+2019-03-17 17:36:24.409 +08:00 [ERR] Get all posts........
+2019-03-17 17:36:24.431 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 113.08640000000001ms.
+2019-03-17 17:36:24.444 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PeopleMatching.Infrastructure.Resources.PostResource, PeopleMatching.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-03-17 17:36:24.452 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 151.91310000000001ms
+2019-03-17 17:36:24.458 +08:00 [INF] Request finished in 171.0604ms 200 application/json; charset=utf-8
+2019-03-17 17:48:16.862 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 17:48:17.400 +08:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 17:48:17.459 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Posts" AS "p")
+    THEN 1 ELSE 0
+END
+2019-03-17 17:48:17.558 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-17 17:48:19.461 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts  
+2019-03-17 17:48:19.654 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 17:48:20.199 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) with arguments (["PeopleMatching.Core.Entities.PostParameters"]) - Validation state: "Valid"
+2019-03-17 17:48:20.225 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 17:48:20.325 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 17:48:20.358 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "x"
+2019-03-17 17:48:20.505 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 17:48:20.545 +08:00 [INF] Executed DbCommand (10ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "x"."Id", "x"."Author", "x"."Body", "x"."LastField", "x"."Remark", "x"."Title"
+FROM "Posts" AS "x"
+ORDER BY "x"."Id"
+LIMIT @__p_1 OFFSET @__p_0
+2019-03-17 17:48:20.824 +08:00 [ERR] Get all posts........
+2019-03-17 17:48:20.833 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 608.919ms.
+2019-03-17 17:48:20.854 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PeopleMatching.Infrastructure.Resources.PostResource, PeopleMatching.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-03-17 17:48:20.884 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 1217.2255ms
+2019-03-17 17:48:20.917 +08:00 [INF] Request finished in 1458.1357ms 200 application/json; charset=utf-8
+2019-03-17 17:48:22.772 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?pageIndex=0&pageSize=3  
+2019-03-17 17:48:22.778 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-17 17:48:22.794 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) with arguments (["PeopleMatching.Core.Entities.PostParameters"]) - Validation state: "Valid"
+2019-03-17 17:48:22.805 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-17 17:48:22.822 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 17:48:22.832 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "x"
+2019-03-17 17:48:22.839 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-17 17:48:22.846 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "x"."Id", "x"."Author", "x"."Body", "x"."LastField", "x"."Remark", "x"."Title"
+FROM "Posts" AS "x"
+ORDER BY "x"."Id"
+LIMIT @__p_1 OFFSET @__p_0
+2019-03-17 17:48:22.861 +08:00 [ERR] Get all posts........
+2019-03-17 17:48:22.864 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 59.8513ms.
+2019-03-17 17:48:22.870 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PeopleMatching.Infrastructure.Resources.PostResource, PeopleMatching.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-03-17 17:48:22.873 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 87.09620000000001ms
+2019-03-17 17:48:22.879 +08:00 [INF] Request finished in 106.9233ms 200 application/json; charset=utf-8

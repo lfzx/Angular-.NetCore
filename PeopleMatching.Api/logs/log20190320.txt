@@ -1,0 +1,144 @@
+2019-03-20 17:17:04.360 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-20 17:17:05.615 +08:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-20 17:17:05.781 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Posts" AS "p")
+    THEN 1 ELSE 0
+END
+2019-03-20 17:17:06.038 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-20 17:24:25.370 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-20 17:24:26.287 +08:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-20 17:24:26.380 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Posts" AS "p")
+    THEN 1 ELSE 0
+END
+2019-03-20 17:24:26.511 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-20 17:25:12.781 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-20 17:25:13.547 +08:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-20 17:25:13.631 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Posts" AS "p")
+    THEN 1 ELSE 0
+END
+2019-03-20 17:25:13.750 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-20 17:26:41.619 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-20 17:26:42.410 +08:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-20 17:26:42.511 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Posts" AS "p")
+    THEN 1 ELSE 0
+END
+2019-03-20 17:26:42.642 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-20 17:28:17.171 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-20 17:28:17.657 +08:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-20 17:28:17.706 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Posts" AS "p")
+    THEN 1 ELSE 0
+END
+2019-03-20 17:28:17.778 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-20 17:28:19.413 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts  
+2019-03-20 17:28:19.453 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-03-20 17:28:19.669 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-20 17:28:20.383 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) with arguments (["PeopleMatching.Core.Entities.PostParameters"]) - Validation state: "Valid"
+2019-03-20 17:28:20.425 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-20 17:28:20.505 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-20 17:28:20.527 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2019-03-20 17:28:20.580 +08:00 [WRN] Query: '(from Post <generated>_2 in DbSet<Post> select [<generated>_2]).Skip(__p_0).Take(__p_1)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-03-20 17:28:20.658 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-20 17:28:20.689 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastField", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+LIMIT @__p_1 OFFSET @__p_0
+2019-03-20 17:28:20.945 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 542.03230000000008ms.
+2019-03-20 17:28:20.965 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2019-03-20 17:28:21.016 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 1331.2067ms
+2019-03-20 17:28:21.041 +08:00 [INF] Request finished in 1630.8489ms 200 application/json; charset=utf-8
+2019-03-20 17:28:21.156 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/favicon.ico  
+2019-03-20 17:28:21.159 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-03-20 17:28:21.165 +08:00 [INF] Request finished in 9.5213ms 404 
+2019-03-20 17:28:55.167 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-20 17:28:55.668 +08:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-20 17:28:55.717 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Posts" AS "p")
+    THEN 1 ELSE 0
+END
+2019-03-20 17:28:55.803 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-20 17:28:57.281 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts  
+2019-03-20 17:28:57.320 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-03-20 17:28:57.452 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-20 17:28:57.470 +08:00 [INF] Authorization failed.
+2019-03-20 17:28:57.477 +08:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-03-20 17:28:57.489 +08:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2019-03-20 17:28:57.939 +08:00 [INF] AuthenticationScheme: BearerIdentityServerAuthenticationJwt was challenged.
+2019-03-20 17:28:57.950 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2019-03-20 17:28:57.979 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 516.6802ms
+2019-03-20 17:28:58.002 +08:00 [INF] Request finished in 721.4265ms 401 
+2019-03-20 17:29:07.978 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/3  
+2019-03-20 17:29:07.982 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2019-03-20 17:29:07.994 +08:00 [INF] Route matched with {action = "Get", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api)
+2019-03-20 17:29:08.002 +08:00 [INF] Authorization failed.
+2019-03-20 17:29:08.005 +08:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-03-20 17:29:08.009 +08:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2019-03-20 17:29:08.015 +08:00 [INF] AuthenticationScheme: BearerIdentityServerAuthenticationJwt was challenged.
+2019-03-20 17:29:08.019 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2019-03-20 17:29:08.023 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.Get (PeopleMatching.Api) in 22.5061ms
+2019-03-20 17:29:08.033 +08:00 [INF] Request finished in 55.3227ms 401 
+2019-03-20 17:48:01.862 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-20 17:48:02.254 +08:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-20 17:48:02.304 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Posts" AS "p")
+    THEN 1 ELSE 0
+END
+2019-03-20 17:48:02.371 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-20 17:55:54.228 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts  
+2019-03-20 17:55:56.601 +08:00 [INF] Successfully validated the token.
+2019-03-20 17:55:56.611 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2019-03-20 17:55:56.725 +08:00 [INF] Route matched with {action = "GetHateoas", controller = "Post"}. Executing action PeopleMatching.Api.Controllers.PostController.GetHateoas (PeopleMatching.Api)
+2019-03-20 17:55:56.740 +08:00 [INF] Authorization was successful.
+2019-03-20 17:55:57.047 +08:00 [INF] Executing action method PeopleMatching.Api.Controllers.PostController.GetHateoas (PeopleMatching.Api) with arguments (["PeopleMatching.Core.Entities.PostParameters"]) - Validation state: "Valid"
+2019-03-20 17:55:57.071 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-20 17:55:57.159 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-20 17:55:57.181 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2019-03-20 17:55:57.222 +08:00 [WRN] Query: '(from Post <generated>_2 in DbSet<Post> select [<generated>_2]).Skip(__p_0).Take(__p_1)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-03-20 17:55:57.286 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-20 17:55:57.312 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastField", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+LIMIT @__p_1 OFFSET @__p_0
+2019-03-20 17:55:57.466 +08:00 [INF] Executed action method PeopleMatching.Api.Controllers.PostController.GetHateoas (PeopleMatching.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 403.31820000000005ms.
+2019-03-20 17:55:57.480 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Collections.Generic.IEnumerable`1[[System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[PeopleMatching.Infrastructure.Resources.LinkResource, PeopleMatching.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-03-20 17:55:57.508 +08:00 [INF] Executed action PeopleMatching.Api.Controllers.PostController.GetHateoas (PeopleMatching.Api) in 775.0487ms
+2019-03-20 17:55:57.520 +08:00 [INF] Request finished in 3293.0205ms 200 application/vnd.cgzl.hateoas+json; charset=utf-8

@@ -1,0 +1,11 @@
+2019-03-22 10:13:05.897 +08:00 [INF] Entity Framework Core 2.2.3-servicing-35854 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2019-03-22 10:13:06.976 +08:00 [INF] Executed DbCommand (104ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2019-03-22 10:13:07.122 +08:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM "Posts" AS "p")
+    THEN 1 ELSE 0
+END
+2019-03-22 10:13:07.294 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
