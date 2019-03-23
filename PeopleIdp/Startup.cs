@@ -91,6 +91,16 @@ namespace PeopleIdp
                 options.HttpsPort = 5001;
             });
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AngularDev", policy =>
+                {
+                    policy.WithOrigins("http://localhost:4200")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
+
         }
 
         public void Configure(IApplicationBuilder app)
@@ -106,6 +116,7 @@ namespace PeopleIdp
                 app.UseHsts();
 
             }
+            app.UseCors();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseIdentityServer();

@@ -73,6 +73,7 @@ namespace PeopleMatching.Api
 
             services.AddScoped<IPostRepository, PostRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IPostImageRepository, PostImageRepository>();
 
             services.AddAutoMapper();
             
@@ -81,7 +82,7 @@ namespace PeopleMatching.Api
             services.AddHttpsRedirection(options =>
             {
                 options.RedirectStatusCode = StatusCodes.Status307TemporaryRedirect;
-                options.HttpsPort = 5001;
+                options.HttpsPort = 6001;
             });
 
             services
@@ -92,6 +93,10 @@ namespace PeopleMatching.Api
                   options.ApiName = "restapi";
               });
 
+            services.AddTransient<IValidator<PostAddResource>, PostAddOrUpdateResourceValidator<PostAddResource>>();
+            services.AddTransient<IValidator<PostUpdateResource>, PostAddOrUpdateResourceValidator<PostUpdateResource>>();
+            services.AddTransient<IValidator<PostImageResource>, PostImageResourceValidator>();
+
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
             services.AddScoped<IUrlHelper>(factory =>
             {
@@ -99,17 +104,30 @@ namespace PeopleMatching.Api
                 return new UrlHelper(actionContext);
             });
 
+
             var propertyMappingContainer = new PropertyMappingContainer();
             propertyMappingContainer.Register<PostPropertyMapping>();
             services.AddSingleton<IPropertyMappingContainer>(propertyMappingContainer);
 
             services.AddTransient<ITypeHelperService, TypeHelperService>();
 
-            services.AddTransient<IValidator<PostAddResource>, PostAddOrUpdateResourceValidator<PostAddResource>>();
-            services.AddTransient<IValidator<PostUpdateResource>, PostAddOrUpdateResourceValidator<PostUpdateResource>>();
+           
+
+            //配置跨域
+            services.AddCors(options =>
+            {
+                // 添加一个策略，AllowAngularDevOrigin为自定义名字，
+                //  builder.WithOrigins("http://localhost:4200")把所有从这个地址发出来的请求都允许
+                options.AddPolicy("AllowAngularDevOrigin",
+                    builder => builder.WithOrigins("http://localhost:4200")
+                        .WithExposedHeaders("X-Pagination")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod());
+            });
 
             services.Configure<MvcOptions>(options =>
             {
+                options.Filters.Add(new CorsAuthorizationFilterFactory("AllowAngularDevOrigin"));
                 // 针对所有的controller都需要认证用户才能访问
                 var policy = new AuthorizationPolicyBuilder()
                     .RequireAuthenticatedUser()
@@ -121,10 +139,7 @@ namespace PeopleMatching.Api
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(
-            IApplicationBuilder app,
-            IHostingEnvironment env,
-            ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app,IHostingEnvironment env,ILoggerFactory loggerFactory)
         {
             //// 默认返回的异常提示格式
             //if (env.IsDevelopment())
@@ -134,8 +149,9 @@ namespace PeopleMatching.Api
 
             //引用自己写的错误异常提示
             app.UseMyExceptionHandler(loggerFactory);
-
+            app.UseCors("AllowAngularDevOrigin");
             app.UseHttpsRedirection();
+            app.UseStaticFiles();
             app.UseAuthentication();
 
             app.UseMvc();

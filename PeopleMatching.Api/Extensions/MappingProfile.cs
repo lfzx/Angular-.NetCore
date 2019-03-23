@@ -19,6 +19,9 @@ namespace PeopleMatching.Api.Extensions
             CreateMap<PostAddResource, Post>();
             CreateMap<PostUpdateResource, Post>();
 
+            CreateMap<PostImage, PostImageResource>();
+            CreateMap<PostImageResource, PostImage>();
+
         }
     }
 }

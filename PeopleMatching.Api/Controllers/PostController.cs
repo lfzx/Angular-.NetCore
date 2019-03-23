@@ -20,7 +20,6 @@ using System.Threading.Tasks;
 
 namespace PeopleMatching.Api.Controllers
 {
-    [AllowAnonymous]
     [Route("api/posts")]
     public class PostController: Controller
     {
@@ -52,6 +51,7 @@ namespace PeopleMatching.Api.Controllers
             _logger = loggerFactory.CreateLogger("PeopleMatching.Api.Controller.PostController");
         }
 
+        [AllowAnonymous]
         [HttpGet(Name = "GetPosts")]
         [RequestHeaderMatchingMediaType("Accept", new[] { "application/vnd.cgzl.hateoas+json" })]
         public async Task<IActionResult> GetHateoas(PostParameters postParameters)
@@ -104,6 +104,7 @@ namespace PeopleMatching.Api.Controllers
             return Ok(result);
         }
 
+        [AllowAnonymous]
         [HttpGet(Name = "GetPosts")]
         public async Task<IActionResult> Get(PostParameters postParameters)
         {
@@ -147,7 +148,7 @@ namespace PeopleMatching.Api.Controllers
             return Ok(postResources.ToDynamicIEnumerable(postParameters.Fields));
         }
 
-
+        [AllowAnonymous]
         [HttpGet("{id}",Name ="GetPost")]
         public async Task<IActionResult> Get(int id,string fields)
         {

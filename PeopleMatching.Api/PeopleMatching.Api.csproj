@@ -24,4 +24,8 @@
     <ProjectReference Include="..\PeopleMatching.Infrastructure\PeopleMatching.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\uploads\" />
+  </ItemGroup>
+
 </Project>
