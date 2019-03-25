@@ -2,6 +2,7 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
+using IdentityModel;
 using IdentityServer4;
 using IdentityServer4.Models;
 using System.Collections.Generic;
@@ -25,7 +26,11 @@ namespace PeopleIdp
         {
             return new ApiResource[]
             {
-                new ApiResource("restapi", "My RESTful API")
+                new ApiResource("restapi", "My RESTful API", new List<string>{
+                    "name",
+                    "gender",
+                    JwtClaimTypes.PreferredUserName,
+                    JwtClaimTypes.Picture})
             };
         }
         // 该项目模板预定义了一些客户端配置

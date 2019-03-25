@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using IdentityModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -196,7 +197,10 @@ namespace PeopleMatching.Api.Controllers
 
             var newPost = _mapper.Map<PostAddResource, Post>(postAddResource);
 
-            newPost.Author = "admin";
+            var userName = User.Claims.FirstOrDefault(x => x.Type == JwtClaimTypes.PreferredUserName)?.Value;
+
+            newPost.Author = userName;
+
             newPost.LastField = DateTime.Now;
 
             _postRepository.AddPost(newPost);
